@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Website</title>
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Bootstrap Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info-one">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="header-content-left">
+              <img src="img/image1.png" style="width: 100%;">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="header-content-right">
+              <h1 class="display-4">Lorem ipsum dolor.</h1>
+              <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa accusamus, cumque aspernatur. Odit adipisci doloremque esse. Obcaecati ducimus veniam quo, excepturi assumenda laborum ipsa vitae, sint velit esse quidem dolores!</p>
+              <a href="#" class="btn btn-outline-secondary btn-lg mt-2 header-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Testimonial -->
+    <section id="testimonial">
+      <div class="container">
+        <p class="h2 mb-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus similique, ullam quisquam excepturi atque vero facere quaerat, quidem iste neque. Placeat veniam, maxime minima culpa modi! Dolores, hic nihil minima.
+        </p>
+        <p class="h4">- Ryan Ray</p>
+      </div>
+    </section>
+
+    <!-- Info One -->
+    <section id="info-one">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="info-left">
+              <img src="img/image2.png" style="width: 100%;">
+            </div>
+          </div>
+          <div class="col-md-6 my-auto">
+            <div class="info-right">
+              <h2>Lorem ipsum dolor sit.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem inventore voluptate voluptas voluptatibus distinctio in repellendus laboriosam veniam soluta quam odit quidem deleniti laudantium odio a ad aspernatur tempore, totam.</p>
+              <a href="#" class="btn btn-outline-secondary btn-lg">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Two -->
+    <section id="info-two">
+      <div class="container">
+        <div class="row my-5 pt-5">
+          <div class="col-md-6">
+            <h2>Lorem ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cupiditate labore ipsa eveniet, dolorum id recusandae quibusdam numquam earum, obcaecati quisquam laborum minus, animi voluptas quaerat! Quis recusandae modi quae.</p>
+          </div>
+          <div class="col-md-6">
+            <h2>Lorem ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cupiditate labore ipsa eveniet, dolorum id recusandae quibusdam numquam earum, obcaecati quisquam laborum minus, animi voluptas quaerat! Quis recusandae modi quae.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <form class="card my-4">
+              <div class="card-body">
+                <div class="form-group">
+                  <input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea rows="10" cols="30" placeholder="Message" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary btn-block">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 4 Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- My Scripts -->
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar', {
+        duration: 2000,
+        origin: 'bottom'
+      });
+      sr.reveal('.header-content-left', {
+        duration: 2000,
+        origin: 'top',
+        distance: '300px'
+      });
+      sr.reveal('.header-content-right', {
+        duration: 2000,
+        origin: 'right',
+        distance: '300px'
+      });
+      sr.reveal('.header-btnt', {
+        duration: 2000,
+        origin: 'bottom',
+        delay: 1000
+      });
+      sr.reveal('#testimonial', {
+        duration: 2000,
+        origin: 'left',
+        distance: '300px',
+        viewFactor: 0.2
+      });
+
+      // Smooth Scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+      });
+    });
+    </script>
+  </body>
+</html>
